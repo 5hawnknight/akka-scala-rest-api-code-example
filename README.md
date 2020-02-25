@@ -14,3 +14,6 @@
 
 #### Tests
 * `sbt test`
+
+#### Future Tasks
+* Replace in memory list for database (slick,h2,derby,etc) 
