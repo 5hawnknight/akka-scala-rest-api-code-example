@@ -20,9 +20,7 @@ class MessageRouter(messageRepository: MessageRepository) extends Router with Di
   override def route: Route = pathPrefix("api") {
     pathPrefix("message") {
       pathEndOrSingleSlash {
-        get {
-          complete(messageRepository.all)
-        } ~ post {
+        post {
           entity(as[RawMessage]) { rawMessage =>
             onComplete(messageRepository.duplicateRequestValidation(rawMessage)) {
               case Success(Some(DuplicateRequest)) => {
