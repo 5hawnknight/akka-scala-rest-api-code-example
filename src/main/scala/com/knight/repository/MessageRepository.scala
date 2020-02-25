@@ -3,7 +3,7 @@ package com.knight.repository
 import com.knight.exceptions.{APIError, DuplicateRequest}
 import com.knight.logic.WordFunctions
 import com.knight.models.{Message, RawMessage}
-import com.knight.models.tiny.{Count, Id, Word}
+import com.knight.models.tiny.{Count, Id}
 
 import scala.concurrent.Future
 
@@ -33,6 +33,4 @@ class MessageRepository(var messagesDB: List[Message] = List()) {
   def getMessageCount: Future[Count] = Future {
     messageCounter
   }
-
-  def all: Future[List[Message]] = Future { messagesDB }
 }
