@@ -7,8 +7,6 @@ import com.knight.models.tiny.{Count, Id, Word}
 
 import scala.concurrent.Future
 
-object EmployeeRepository {}
-
 class MessageRepository(var messagesDB: List[Message] = List()) {
   import com.knight.repository.RepositoryContext._
 
