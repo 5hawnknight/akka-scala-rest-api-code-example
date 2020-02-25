@@ -1,7 +1,7 @@
-package com.knight.logic
+package com.knight.library
 
-import com.knight.models.{Message, RawMessage}
 import com.knight.models.tiny.{Count, Id, Word}
+import com.knight.models.{Message, RawMessage}
 
 object WordFunctions {
 

@@ -1,7 +1,7 @@
 package com.knight.repository
 
 import com.knight.exceptions.{APIError, DuplicateRequest}
-import com.knight.logic.WordFunctions
+import com.knight.library.WordFunctions
 import com.knight.models.{Message, RawMessage}
 import com.knight.models.tiny.{Count, Id}
 

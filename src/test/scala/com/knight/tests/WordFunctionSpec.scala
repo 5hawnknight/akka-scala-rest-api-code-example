@@ -1,10 +1,10 @@
 package com.knight.tests
 
 import com.github.javafaker.Faker
+import com.knight.library.WordFunctions
 import com.knight.models.tiny.{Id, Word}
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
-import com.knight.logic.WordFunctions
 import com.knight.models.Message
 
 import scala.jdk.CollectionConverters._
